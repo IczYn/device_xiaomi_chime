@@ -375,6 +375,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.telephony.block_binder_thread_on_incoming_calls=false
 
+<<<<<<< HEAD
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.fetchqos=true
 
@@ -402,6 +403,30 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.ril.fast.dormancy.rule=1 \
     ro.ril.fast.dormancy.timeout=3 \
     sys.vendor.shutdown.waittime=500
+=======
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.class_main.sh \
+    init.oppo.reserve.rc \
+    init.msm.usb.configfs.rc \
+    init.oppo.fingerprints.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.rc \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
+    init.recovery.qcom.rc \
+    init.target.rc \
+    ueventd.qcom.rc \
+    init.oppo.vendor.motor.rc \
+    apex_metadata.rc \
+    init.RealmeParts.rc \
+    vendor.qti.hardware.iop@2.0-service-disable.rc \
+    logcat.rc
+>>>>>>> f1f54aa (RMX1901: Enable logcat service)
 
 # Recovery
 PRODUCT_PROPERTY_OVERRIDES += \
