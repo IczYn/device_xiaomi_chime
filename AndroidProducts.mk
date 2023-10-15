@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_citrus.mk \
-    $(LOCAL_DIR)/derp_lime.mk
+    $(LOCAL_DIR)/evolution_citrus.mk \
+    $(LOCAL_DIR)/evolution_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_citrus-user \
-    derp_citrus-userdebug \
-    derp_citrus-eng \
-    derp_lime-user \
-    derp_lime-userdebug \
-    derp_lime-eng
+    evolution_citrus-user \
+    evolution_citrus-userdebug \
+    evolution_citrus-eng \
+    evolution_lime-user \
+    evolution_lime-userdebug \
+    evolution_lime-eng
