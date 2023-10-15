@@ -258,7 +258,7 @@ vendor.pasr.activemode.enabled=true
 vendor.power.pasr.enabled=false
 
 # Perf
-#ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.extension_library=libqti-perfd-client.so
 
 # Platform
 ro.soc.manufacturer=QTI
