@@ -449,8 +449,6 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     disabled
     oneshot
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Logcat Services
 service boot_log /system/bin/logcat -b all -D -f /cache/boot_log_full.txt
     class main
@@ -467,10 +465,9 @@ service boot_log_crash /system/bin/logcat -b crash -D -f /cache/boot_log_crash.t
     oneshot
 
 service boot_log_kernel /system/bin/logcat -b kernel -D -f /cache/boot_log_kernel.txt
-=======
+
 # Include logger service
 service logger /system/bin/logcat -b all -D -f /cache/boot_log.txt
->>>>>>> parent of 35a62c6 (moba: ADVANCE LOGCAT DEBUGGING : Enabled Using init.target.rc)
     class main
     user root
     group root system
@@ -486,15 +483,10 @@ on property:sys.boot_completed=1
     # Stop the logger service
     stop logger
 
-<<<<<<< HEAD
-=======
 on property:vendor.dcvs.prop=1
    start dcvs-sh
->>>>>>> parent of cb260c9 (rootdir: Add auto logger script)
-=======
 on property:vendor.dcvs.prop=1
    start dcvs-sh
->>>>>>> parent of 35a62c6 (moba: ADVANCE LOGCAT DEBUGGING : Enabled Using init.target.rc)
 
 service panel_color /vendor/bin/panelcolor_bin
     class main
