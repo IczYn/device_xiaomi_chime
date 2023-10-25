@@ -451,6 +451,7 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
 on property:vendor.dcvs.prop=1
    start dcvs-sh
 
+<<<<<<< HEAD
 # Logcat Services
 service boot_log /system/bin/logcat -b all -D -f /cache/boot_log_full.txt
     class main
@@ -489,6 +490,10 @@ on property:sys.boot_completed=1
     stop boot_log_kernel
 
 
+=======
+on property:vendor.dcvs.prop=1
+   start dcvs-sh
+>>>>>>> parent of cb260c9 (rootdir: Add auto logger script)
 
 service panel_color /vendor/bin/panelcolor_bin
     class main
@@ -501,4 +506,5 @@ on property:sys.boot_completed=1
 
 ########### FTM end ##########
 ########### FTM end ##########
-########### FTM end #########
+########### FTM end ##########
+

@@ -8,7 +8,11 @@
 $(call inherit-product, device/xiaomi/chime/device-lime.mk)
 
 # Inherit some common PixelExperience stuff.
+<<<<<<< HEAD:octavi_lime.mk
 $(call inherit-product, vendor/octavi/config/common.mk)
+=======
+$(call inherit-product, vendor/derp/config/common.mk)
+>>>>>>> parent of cb260c9 (rootdir: Add auto logger script):derp_lime.mk
 TARGET_BOOT_ANIMATION_RES := 1080
 #TARGET_INCLUDE_LIVE_WALLPAPERS := false
 #USE_LEGACY_BOOTANIMATION := true
@@ -16,7 +20,11 @@ TARGET_BOOT_ANIMATION_RES := 1080
 OCTAVI_MAINTAINER := IczYn
 
 # Device identifier. This must come after all inclusions.
+<<<<<<< HEAD:octavi_lime.mk
 PRODUCT_NAME := octavi_lime
+=======
+PRODUCT_NAME := derp_lime
+>>>>>>> parent of cb260c9 (rootdir: Add auto logger script):derp_lime.mk
 PRODUCT_DEVICE := lime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 9T

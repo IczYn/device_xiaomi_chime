@@ -9,12 +9,10 @@ $(call inherit-product, device/xiaomi/chime/device-citrus.mk)
 
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/octavi/config/common.mk)
-#USE_LEGACY_BOOTANIMATION := true
+EVO_BUILD_TYPE := UNOFFICIAL
+EXTRA_UDFPS_ANIMATIONS := false
 TARGET_BOOT_ANIMATION_RES := 1080
-#TARGET_INCLUDE_LIVE_WALLPAPERS := false
-#DERP_BUILDTYPE := Official
-OCTAVI_MAINTAINER := IczYn
-
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := octavi_citrus
