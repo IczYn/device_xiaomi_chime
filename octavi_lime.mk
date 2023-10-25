@@ -8,8 +8,8 @@
 $(call inherit-product, device/xiaomi/chime/device-lime.mk)
 
 # Inherit some common PixelExperience stuff.
-<<<<<<< HEAD:octavi_lime.mk
-$(call inherit-product, vendor/octavi/config/common.mk)
+<<<<<<< HEAD:evolution_lime.mk
+$(call inherit-product, vendor/evolution/config/common.mk)
 =======
 $(call inherit-product, vendor/derp/config/common.mk)
 >>>>>>> parent of cb260c9 (rootdir: Add auto logger script):derp_lime.mk
@@ -20,8 +20,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 OCTAVI_MAINTAINER := IczYn
 
 # Device identifier. This must come after all inclusions.
-<<<<<<< HEAD:octavi_lime.mk
-PRODUCT_NAME := octavi_lime
+<<<<<<< HEAD:evolution_lime.mk
+PRODUCT_NAME := evolution_lime
 =======
 PRODUCT_NAME := derp_lime
 >>>>>>> parent of cb260c9 (rootdir: Add auto logger script):derp_lime.mk
