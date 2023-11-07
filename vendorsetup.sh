@@ -8,6 +8,8 @@ sleep 1
 git clone https://github.com/hac4us06/kernel-xiaomi-electro -b main kernel/xiaomi/chime
 # Setup kernel
 (cd kernel/xiaomi/chime; git submodule init; git submodule update; sed -i 's/#ifdef CONFIG_KPROBES/#if 0/g' KernelSU/kernel/ksu.c)
+# Clone Camera
+git clone https://gitlab.com/iczyn1/proprietary_vendor_xiaomi_camera -b a14 vendor/xiaomi/camera
 
 # Clone vendor
 git clone https://gitlab.com/iczyn1/vendor_xiaomi_chime -b thirteen vendor/xiaomi/chime
